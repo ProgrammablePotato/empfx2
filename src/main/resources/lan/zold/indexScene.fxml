@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lan.zold.IndexController">
+   <children>
+      <TableView fx:id="empTable" layoutX="34.0" layoutY="53.0" onMouseClicked="#onMouseClickTableView" prefHeight="256.0" prefWidth="453.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="121.0" text="Név" />
+            <TableColumn fx:id="cityCol" prefWidth="116.0" text="Település" />
+            <TableColumn fx:id="salaryCol" prefWidth="74.0" text="Fizetés" />
+        </columns>
+      </TableView>
+      <Button layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBackButton" text="Vissza" />
+      <TextField fx:id="idField" disable="true" layoutX="34.0" layoutY="326.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="nameField" layoutX="105.0" layoutY="326.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="cityField" layoutX="226.0" layoutY="326.0" prefHeight="25.0" prefWidth="120.0" />
+      <TextField fx:id="salaryField" layoutX="358.0" layoutY="326.0" prefHeight="25.0" prefWidth="68.0" />
+      <Button layoutX="134.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickModifyButton" text="Módosít" />
+      <Button layoutX="252.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickDeleteButton" text="Töröl" />
+   </children>
+</Pane>
